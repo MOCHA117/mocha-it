@@ -1,0 +1,432 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.top {
+    background-color: #0a3d62;
+    color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.top p {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #1a4d8c;
+    text-align: center;
+    padding: 12px;
+    
+    /* Key lines to keep it at the top */
+    position: sticky; 
+    top: 0;           
+    z-index: 1000;    /* Ensures it stays on top of other content */
+    
+    /* Optional: shadow to make it pop when scrolling */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.navbar {
+    background-color: #1e3799;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #0a3d62;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    background-color: #38ada9;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2e9c98;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== SERVICES / PROJECTS / POSTS ===== */
+.services li,
+.project,
+.post {
+    background: #ffffff;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .navbar a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    color: #333;
+}
+
+/* Header & Nav */
+.top {
+    background: #002b5b; /* Deep Professional Blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background: #1a4d8c;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+/* The Main Contact Card */
+.contact-card {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    overflow: hidden; /* Clips the corners nicely */
+}
+
+/* Left Side: Photo Area */
+.profile-area {
+    flex: 1;
+    background: #fafafa;
+    padding: 40px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.profile-img {
+    width: 200px;
+    height: 300px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 4px solid rgb(245, 243, 248);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.profile-area h3 {
+    margin: 10px 0 5px;
+    font-size: 1.4rem;
+}
+
+.profile-area span {
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Right Side: Content Area */
+.content {
+    flex: 1.5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.info-row i {
+    width: 30px;
+    font-size: 1.2rem;
+    color: #1a4d8c; /* Matches the nav */
+    margin-right: 15px;
+}
+
+.info-row p {
+    margin: 0;
+}
+
+.info-row a {
+    color: #25d366; /* WhatsApp Green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Chat Button */
+.btn-chat {
+    display: inline-block;
+    margin-top: 10px;
+    background: #25d366;
+    color: white;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.btn-chat:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 650px) {
+    .contact-card {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .profile-area {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}
+/* --- 1. MOVING WORDS (Ticker) --- */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1a4d8c; 
+    padding: 10px 0;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation: ticker 30s linear infinite; /* Adjust speed here */
+}
+
+.ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+}
+
+/* --- 2. SHINING EFFECT (Shimmer) --- */
+.shimmer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #002b5b; /* Base color */
+    background: linear-gradient(to right, #002b5b 20%, #4facfe 40%, #002b5b 60%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    display: inline-block;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* --- 3. CARD STYLING --- */
+.update-card {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #1a4d8c;
+}
+/* The Shining Animation */
+.shining-text {
+    font-weight: bold;
+    /* This creates the gradient "shine" colors */
+    background: linear-gradient(
+        to right, 
+        #002b5b 20%, 
+        #4facfe 40%, 
+        #fceabb 50%, 
+        #4facfe 60%, 
+        #002b5b 80%
+    );
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Change 3s to make it shine faster or slower */
+    animation: shine-effect 4s linear infinite;
+}
+
+@keyframes shine-effect {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Card Styling to make the shine stand out */
+.update-card {
+    background: #ffffff;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.date {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ad-footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+/* Container for the remote services */
+.online-services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Individual Service Cards */
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #1a4d8c;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #1a4d8c;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin: 15px 0;
+    font-size: 1.25rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Re-using your Shining Animation */
+.shining-text {
+    background: linear-gradient(to right, #002b5b 20%, #4facfe 40%, #fceabb 50%, #4facfe 60%, #002b5b 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine-effect 4s linear infinite;
+}
